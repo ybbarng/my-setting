@@ -3,6 +3,10 @@
 echo 'Install prerequisites'
 sudo apt-get install git vim zsh wget tmux
 
+echo 'Install git configs'
+git clone https://github.com/ybbarng/git-config.git ~/.git-config
+ln -sfv ~/.git-config/gitconfig ~/.gitconfig
+
 echo 'Install oh-my-zsh'
 #https://github.com/robbyrussell/oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
