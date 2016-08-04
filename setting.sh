@@ -28,6 +28,7 @@ echo 'Install zshrc and powerline theme'
 git clone https://github.com/ybbarng/zsh.git ~/.zsh
 ln -sfv ~/.zsh/zshrc.zsh ~/.zshrc.zsh
 ln -sfv ~/.zsh/powerline.zsh-theme ~/.oh-my-zsh/themes/powerline.zsh-theme
-echo 'Install zshrc and powerline theme'
+echo 'Install tmux config and tpm'
 git clone https://github.com/ybbarng/tmux.git ~/.tmux
 ln -sfv ~/.tmux/tmux.conf ~/.tmux.conf
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
