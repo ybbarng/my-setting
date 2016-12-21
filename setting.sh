@@ -26,7 +26,7 @@ echo 'Install zsh syntax highlighing'
 git clone https://github.com/ybbarng/zsh-syntax-highlighting.git ~/.zsh-syntax-highlighting
 echo 'Install zshrc and powerline theme'
 git clone https://github.com/ybbarng/zsh.git ~/.zsh
-ln -sfv ~/.zsh/zshrc.zsh ~/.zshrc.zsh
+ln -sfv ~/.zsh/zshrc.zsh ~/.zshrc
 ln -sfv ~/.zsh/powerline.zsh-theme ~/.oh-my-zsh/themes/powerline.zsh-theme
 echo 'Install tmux config and tpm'
 git clone https://github.com/ybbarng/tmux.git ~/.tmux
