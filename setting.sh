@@ -14,14 +14,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 echo 'Install vim settings'
 git clone https://github.com/ybbarng/vim.git ~/.vim
 ln -sfv ~/.vim/rc/vimrc ~/.vimrc
-cd .vim
-git submodule init
-git submodule update
-cd bundle/Vundle.vim
-git checkout master
-git pull origin master
-vim +PluginUpdate +qall
-cd ~
+vim +PlugUpdate +qall
 echo 'Install zsh syntax highlighing'
 git clone https://github.com/ybbarng/zsh-syntax-highlighting.git ~/.zsh-syntax-highlighting
 echo 'Install zshrc and powerline theme'
