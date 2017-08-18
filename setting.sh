@@ -12,6 +12,8 @@ echo 'Install oh-my-zsh'
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 echo 'Install vim settings'
+mv ~/.vim ~/.vim-old
+mv ~/.vimrc ~/.vimrc-old
 git clone https://github.com/ybbarng/vim.git ~/.vim
 ln -sfv ~/.vim/rc/vimrc ~/.vimrc
 vim +PlugUpdate +qall
